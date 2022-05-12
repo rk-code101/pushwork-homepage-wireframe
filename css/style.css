@@ -1,0 +1,389 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  width: 1440px;
+  margin: 0 auto;
+  
+}
+html {
+  font-size: 62.5%;
+  font-family: Helvetica, sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+    background-color: rgba(28, 35, 50, 1);
+}
+header nav, nav ul {
+    display: flex;
+    height: 100px;
+    font-size: 1.6rem;
+    justify-content: space-between;
+}
+header nav {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+}
+header nav ul{
+  flex-basis: 55%;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+  header nav a {
+  text-decoration: none;
+  color: grey;
+  font-size: 1rem;
+  font-weight: 700;
+}  
+header nav ul button {
+  font-size: 1rem;
+  padding: 1.5rem 3rem;
+  background-color: rgba(59, 65, 79, 1);
+  color: white;
+  border: none;
+  border-radius: 0.4rem;
+}  
+.main1 {
+  background-image: url("../images/background.png");
+  background-size: auto;
+  background-color: white;
+  height: 499px;
+
+}
+
+.subSection, .subMain2 {
+  display: flex;
+  
+}
+.subSection {
+  width: 85%;
+  margin: 0 auto;
+  
+}
+.subMain1, .subMain2 {
+  margin-top: 4rem;
+}
+.subMain2 img{
+  width: 85%;  
+}
+.subMain2 {
+  justify-content: flex-end;
+}
+.subMain1 {
+  flex-basis: 45%;
+  font-size: 1.5rem;
+  color: white;
+}
+.subMain1 p {
+  color: gray;
+  font-size: 1.7rem;
+  margin-bottom: 5rem;
+}
+.subMain1 button {
+  padding: 2rem 4rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-right: 3rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+.subMain1 span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  
+}
+.subMain1 a {
+  text-decoration: none;
+  color: white;
+}
+.subMain1 h1 {
+  font-weight: 200;
+}
+.main2 nav {
+  margin: 0 auto;
+  width: 85%;
+  display: flex;
+  align-content: center;
+  justify-content: end;
+  padding: 5rem 0;
+  font-size: 2rem;
+  margin-left: 18rem;
+}
+.main2 nav a img {
+  width: 50%;
+}
+.main3 {
+  height: 800px;
+}
+.subMain3, .subMain4, .subMain6, .subMain10 {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.main3-two {
+  flex-basis: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 5rem;
+}
+.main3-two > section {
+  width: 250px;
+  height: 300px;
+  box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 0.7rem;
+  
+}
+.main3-two section .image-placeholder {
+  width: 100%;
+  height: 75%;
+  background-color: lightgrey;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+  
+
+}
+.main3-two h4, .main3-two p {
+  text-align: center;
+  padding: 0 2rem;
+}
+.main3-one {
+  flex-basis: 45%;
+  padding: 2rem 0;  
+}
+.main3-one h3, .subMain4 section + section h3, .subMain6 section + section h4, .section-main8 h4, .subMain10 section + section h3 {
+  font-size: 1.5rem;
+  color: gray;
+}
+.main3-one h2, .subMain4 section + section h2, .subMain6 section + section h2, .subMain10 section + section h2 {
+  font-size: 3rem;
+  font-weight: 200;
+}
+.main3-one p, .subMain4 section + section p, .subMain6 section + section p, .subMain10 section + section p {
+  font-size: 2rem;
+  font-weight: 100;
+  color: gray;
+  padding-bottom: 2rem;
+}
+.main3-one p + p {
+  margin-bottom: 7rem;
+}
+.main3-one button, .subMain4 section + section button, .subMain10 section + section button {
+  padding: 2rem 6rem;
+  background-color: black;
+  color: lightgray;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  border: none;
+}
+.main4, .subMain6, .section-main11 {
+  height: 500px;
+}
+.subMain4 > section, .subMain6 > section, .subMain10 > section {
+  flex-basis: 45%;
+}
+.subMain4 > section > section, .subMain6 > section > section, .subMain10 > section > section {
+  width: 550px;
+  height: 480px;
+  border-radius: 0.5rem;
+  background-color: lightgray;
+}
+.section-main5 {
+  text-align: center;
+  padding: 10rem 28rem 3rem 28rem;
+  font-size: 2rem;
+  height: 350px;
+}
+.section-main5 h2, .section-main5 p {
+  font-weight: 100;
+}
+.section-main5 p {
+  color: gray;
+}
+.subMain6 section + section h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.section-main7 {
+  text-align: center;
+  padding: 10rem 25rem;
+}
+.section-main7 button {
+  padding: 2rem 4rem;
+  background-color: rgba(28, 35, 50, 1);
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+.section-main8 {
+  height: 150px;
+}
+.section-main8 h2 {
+  font-size: 3.5rem;
+  font-weight: 100;
+  width: 25%;
+  margin-left: 10rem;
+}
+.section-main8 h4{
+  margin-left: 10rem;
+}
+.main9 {
+  height: 740px;
+  background-image: url("../images/background3.png");
+  background-color: white;
+}
+.subMain9 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 4rem;
+  padding-top: 22rem;
+}
+.subMain9 section {
+  width: 400px;
+  height: 200px;
+  background-color: white;
+  border-radius: 1rem;
+  text-align: center;
+  padding-top: 6rem;
+}
+.main10 {
+  padding-top: 10rem;
+  background-color: rgba(242, 242, 242, 1);
+  height: 650px;
+}
+.section-main11 {
+  text-align: center;
+  padding: 10rem 25rem;
+  
+}
+.section-main11 h4 {
+  font-size: 1.5rem;
+  color: gray;
+}
+.section-main11 p {
+  font-size: 3rem;
+  font-weight: 100;
+  margin-bottom: 7rem;
+}
+.section-main11 h3 {
+  font-size: 1.7rem;
+  
+}
+.section-main11 h3 + h3 {
+  font-weight: 100;
+  color: gray;
+}
+.section-main12 {
+  background-color: rgba(28, 35, 50, 1);
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+.subMain12 {
+  flex-basis: 48%;
+  padding: 0 15rem;
+}
+.subMain12 h4 {
+  font-size: 1.5rem;
+  color: gray;
+}
+.subMain12 h2 {
+  font-size: 2.7rem;
+  font-weight: 100;
+}
+.section-main12 button {
+  padding: 1.7rem 6rem;
+  background-color: rgba(50, 54, 66, 1);
+  border: none;
+  border-radius: 0.4rem;
+  color: white;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.section-main12 button + button {
+  margin-right: 10rem;
+  background-color: white;
+  color: rgba(50, 54, 66, 1);
+}
+.section-last {
+  width: 85%;
+  padding-top: 5rem;
+  display: flex;
+  margin: 0 auto;
+  column-gap: 4rem;
+  height: 500px;
+}
+.section-last nav img {
+  width: 50%;
+  
+}
+.section-last section {
+  flex-basis: 22%;
+}
+.section-last section ul {
+  padding-left: 0;
+  list-style-type: circle;
+  list-style-image: ;
+}
+.section-last section a {
+  display: block;
+  text-decoration: none;
+  color: gray;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+.section-last section nav {
+  display: flex;
+  justify-content: space-around;
+}
+.section-last section h5 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+
+  
+  
+
+
+
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
